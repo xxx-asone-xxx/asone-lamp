@@ -1,0 +1,3 @@
+    # redis
+    - name: install redis
+      yum: name=redis enablerepo=10gen state=present

@@ -1,0 +1,17 @@
+# PHP
+- name: install php
+  yum: name={{ item }} state=present
+  with_items:
+  - php
+  - php-opcache
+  - php-devel
+  - php-mbstring
+  - php-mcrypt
+  - php-mysql
+  - php-phpunit-PHPUnit
+  - php-pecl-xdebug
+  - php-nrk-Predis
+  - php-pecl-redis
+  - php-redis
+  - php-pecl-memcached
+  - php-pecl-mongo

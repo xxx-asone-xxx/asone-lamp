@@ -1,0 +1,6 @@
+#mongodb
+- name: install mongodb
+  yum: name={{ item }} state=present
+  with_items:
+  - mongo-10gen
+  - mongo-10gen-server
